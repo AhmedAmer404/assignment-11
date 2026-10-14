@@ -22,3 +22,17 @@ class Container<T>
     }
 }
 #endregion
+#region Question 3
+//Multiple type parameters mean using more than one type parameter in a generic class, allowing each parameter to represent a different data type.
+class Pair<TKey, TValue>
+{
+    public TKey Key { get; set; }
+    public TValue Value { get; set; }
+
+    public Pair(TKey key, TValue value)
+    {
+        Key = key;
+        Value = value;
+    }
+}
+#endregion
